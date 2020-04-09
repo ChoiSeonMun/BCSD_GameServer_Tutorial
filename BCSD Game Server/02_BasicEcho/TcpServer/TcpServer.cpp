@@ -1,6 +1,5 @@
 ﻿#include "Common.h"
 
-
 int main()
 {
 	// WinSock 초기화
@@ -25,8 +24,8 @@ int main()
 	// 바인드
 	sockaddr_in serverAddress = { 0 };
 	serverAddress.sin_family = AF_INET;
-	serverAddress.sin_port = htons(DEFAULT_PORT);
-	serverAddress.sin_addr.S_un.S_addr = INADDR_ANY;
+	serverAddress.sin_port = htons(DEFAULT_TCP_PORT);
+	serverAddress.sin_addr.s_addr = htonl(INADDR_ANY);
 
 	result = bind(listenSocket, (const sockaddr*)&serverAddress, sizeof(serverAddress));
 	if (result == SOCKET_ERROR)

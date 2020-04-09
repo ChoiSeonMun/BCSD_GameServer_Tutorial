@@ -23,7 +23,7 @@ int main()
 	addrinfo* serverAddress = nullptr;
 	// pNodeName에 NULL, "localhost", "127.0.0.1" 모두
 	// 본인 컴퓨터를 지칭한다.
-	result = getaddrinfo(NULL, std::to_string(DEFAULT_PORT).c_str(), &hints, &serverAddress);
+	result = getaddrinfo(NULL, std::to_string(DEFAULT_TCP_PORT).c_str(), &hints, &serverAddress);
 	if (result != 0)
 	{
 		printf("Can't find the server : %d\n", WSAGetLastError());
