@@ -24,6 +24,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnicodeTcpServer", "Unicode
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnicodeTcpClient", "Unicode Echo Server\UnicodeTcpClient\UnicodeTcpClient.vcxproj", "{53096724-2B07-4E5B-B409-658F85C74FB8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PortScanner", "PortScanner", "{A865F210-0021-4B6D-94A1-8B266DB23FB4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PortScanner", "PortScanner\PortScanner\PortScanner.vcxproj", "{68BC1D3D-80D5-4684-A170-A94FF32852D9}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		02_BasicEcho\Common\Common\Common.vcxitems*{2cb37133-6984-4401-89f8-dd65b7aba3c8}*SharedItemsImports = 4
@@ -87,6 +91,14 @@ Global
 		{53096724-2B07-4E5B-B409-658F85C74FB8}.Release|x64.Build.0 = Release|x64
 		{53096724-2B07-4E5B-B409-658F85C74FB8}.Release|x86.ActiveCfg = Release|Win32
 		{53096724-2B07-4E5B-B409-658F85C74FB8}.Release|x86.Build.0 = Release|Win32
+		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Debug|x64.ActiveCfg = Debug|x64
+		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Debug|x64.Build.0 = Debug|x64
+		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Debug|x86.ActiveCfg = Debug|Win32
+		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Debug|x86.Build.0 = Debug|Win32
+		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Release|x64.ActiveCfg = Release|x64
+		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Release|x64.Build.0 = Release|x64
+		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Release|x86.ActiveCfg = Release|Win32
+		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +111,7 @@ Global
 		{39896250-7723-4FCB-8EA7-C0357A7EFF05} = {B1B87E41-D9C0-4629-908B-CCC5F1FBA43C}
 		{9BB23129-F44B-4CD6-99E8-7ED16CDF033E} = {904FDDFA-78F7-443D-8F23-288D60131241}
 		{53096724-2B07-4E5B-B409-658F85C74FB8} = {904FDDFA-78F7-443D-8F23-288D60131241}
+		{68BC1D3D-80D5-4684-A170-A94FF32852D9} = {A865F210-0021-4B6D-94A1-8B266DB23FB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BB6B166-B3A0-4078-B416-A420167133C7}
