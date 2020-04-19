@@ -1,5 +1,6 @@
 ﻿#include "Common.h"
 
+
 int _tmain()
 {
 	setlocale(LC_ALL, "KOREAN");

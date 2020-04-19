@@ -28,13 +28,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PortScanner", "PortScanner"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PortScanner", "PortScanner\PortScanner\PortScanner.vcxproj", "{68BC1D3D-80D5-4684-A170-A94FF32852D9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_TcpEcho", "01_TcpEcho", "{9EFB8439-E8F9-4870-B76C-0CAF21AD0103}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "01_TcpEcho\Server\Server.vcxproj", "{5151E1CD-00CC-40E2-9868-23C7964A3A2D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "01_TcpEcho\Common\Common.vcxitems", "{F36E140F-1455-4A96-9010-E9297189F38A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "01_TcpEcho\Client\Client.vcxproj", "{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		02_BasicEcho\Common\Common\Common.vcxitems*{2cb37133-6984-4401-89f8-dd65b7aba3c8}*SharedItemsImports = 4
 		02_BasicEcho\Common\Common\Common.vcxitems*{39896250-7723-4fcb-8ea7-c0357a7eff05}*SharedItemsImports = 4
+		01_TcpEcho\Common\Common.vcxitems*{3bc0390e-7ced-41b0-99d5-3b9f8c03bb88}*SharedItemsImports = 4
+		01_TcpEcho\Common\Common.vcxitems*{5151e1cd-00cc-40e2-9868-23c7964a3a2d}*SharedItemsImports = 4
 		02_BasicEcho\Common\Common\Common.vcxitems*{5d88f0ce-c354-45a4-a0f7-c7340737f672}*SharedItemsImports = 4
 		02_BasicEcho\Common\Common\Common.vcxitems*{65cee453-2f5a-478d-9a5a-31791a9d6193}*SharedItemsImports = 4
 		02_BasicEcho\Common\Common\Common.vcxitems*{a3666acb-fc7d-475b-821c-a86ae3b0e059}*SharedItemsImports = 9
+		01_TcpEcho\Common\Common.vcxitems*{f36e140f-1455-4a96-9010-e9297189f38a}*SharedItemsImports = 9
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -99,6 +110,22 @@ Global
 		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Release|x64.Build.0 = Release|x64
 		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Release|x86.ActiveCfg = Release|Win32
 		{68BC1D3D-80D5-4684-A170-A94FF32852D9}.Release|x86.Build.0 = Release|Win32
+		{5151E1CD-00CC-40E2-9868-23C7964A3A2D}.Debug|x64.ActiveCfg = Debug|x64
+		{5151E1CD-00CC-40E2-9868-23C7964A3A2D}.Debug|x64.Build.0 = Debug|x64
+		{5151E1CD-00CC-40E2-9868-23C7964A3A2D}.Debug|x86.ActiveCfg = Debug|Win32
+		{5151E1CD-00CC-40E2-9868-23C7964A3A2D}.Debug|x86.Build.0 = Debug|Win32
+		{5151E1CD-00CC-40E2-9868-23C7964A3A2D}.Release|x64.ActiveCfg = Release|x64
+		{5151E1CD-00CC-40E2-9868-23C7964A3A2D}.Release|x64.Build.0 = Release|x64
+		{5151E1CD-00CC-40E2-9868-23C7964A3A2D}.Release|x86.ActiveCfg = Release|Win32
+		{5151E1CD-00CC-40E2-9868-23C7964A3A2D}.Release|x86.Build.0 = Release|Win32
+		{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88}.Debug|x64.ActiveCfg = Debug|x64
+		{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88}.Debug|x64.Build.0 = Debug|x64
+		{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88}.Debug|x86.ActiveCfg = Debug|Win32
+		{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88}.Debug|x86.Build.0 = Debug|Win32
+		{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88}.Release|x64.ActiveCfg = Release|x64
+		{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88}.Release|x64.Build.0 = Release|x64
+		{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88}.Release|x86.ActiveCfg = Release|Win32
+		{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +139,9 @@ Global
 		{9BB23129-F44B-4CD6-99E8-7ED16CDF033E} = {904FDDFA-78F7-443D-8F23-288D60131241}
 		{53096724-2B07-4E5B-B409-658F85C74FB8} = {904FDDFA-78F7-443D-8F23-288D60131241}
 		{68BC1D3D-80D5-4684-A170-A94FF32852D9} = {A865F210-0021-4B6D-94A1-8B266DB23FB4}
+		{5151E1CD-00CC-40E2-9868-23C7964A3A2D} = {9EFB8439-E8F9-4870-B76C-0CAF21AD0103}
+		{F36E140F-1455-4A96-9010-E9297189F38A} = {9EFB8439-E8F9-4870-B76C-0CAF21AD0103}
+		{3BC0390E-7CED-41B0-99D5-3B9F8C03BB88} = {9EFB8439-E8F9-4870-B76C-0CAF21AD0103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BB6B166-B3A0-4078-B416-A420167133C7}
